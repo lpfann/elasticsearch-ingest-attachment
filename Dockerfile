@@ -1,8 +1,4 @@
-# FROM elasticsearch
-# this image on docker hub is deprecated (see https://hub.docker.com/_/elasticsearch/)
-# I am still using is because of docker hub's auto update
-# official:
-FROM docker.elastic.co/elasticsearch/elasticsearch:6.2.4
+FROM docker.elastic.co/elasticsearch/elasticsearch:7.4.2@sha256:ef0cdf17f8d00d8d90a7872b6672bc44283c6204e86bdf0067f93e9f637aad2a
 
 RUN bin/elasticsearch-plugin install ingest-attachment
 
